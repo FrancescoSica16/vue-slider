@@ -27,12 +27,20 @@ var app = new Vue({
 
     methods: {
         previousImages : function(){   // posso scrivere le funzione solo cosi ?
-            this.indexImages--;   //perche metto this ?
+            this.indexImages-- ;   //perche metto this ?
             console.log(this.indexImages) 
+            
+            if(this.indexImages < 0){
+                this.indexImages = this.images.lenght-1;
+            }
         },
         nextImages : function(){   
-            this.indexImages++;
-            console.log(this.indexImages)   
+            this.indexImages++ ;
+            console.log(this.indexImages)
+
+            if(this.indexImages >= this.images.lenght){
+                this.indexImages = 0;
+            }  
         },
        
     },
