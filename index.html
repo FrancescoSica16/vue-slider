@@ -34,8 +34,9 @@
                     <i class="fas fa-angle-right fa-3x" @click="nextImages()"></i>
                 </div>
                 <div class="nav d-flex">
-                    <i class="fas fa-circle" v-for="contatore in images.length"></i>  
+                    <i class="fas fa-circle" :class="(index == indexImages) ? 'active' : '' " v-for="(image, index) in images" @click="nextImages()"></i>  
                 </div>
+              
             </div>    
           
     </div>

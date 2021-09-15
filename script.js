@@ -46,6 +46,8 @@ var app = new Vue({
             }  
             console.log(this.indexImages)
         },
-       
-    },
+        setImage : function(indexImages){
+            this.indexImages = indexImages;
+        },
+    }
   })

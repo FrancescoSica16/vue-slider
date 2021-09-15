@@ -37,18 +37,18 @@
     background-color: rgba(46, 45, 45, 0.6);
     padding: 10px 10px;
     border-radius: 20px;
+   
+    justify-content: space-around;
+    width: 15%;
 }
 
 .nav i{
     font-size: 2em;
     color: white;
-    justify-content: space-around;
-    /* non funziona  */
-    margin-left: 10px;
 }
 
 .nav i.active{
-    color: thistle;
+    color: rgb(156, 154, 156); 
 }
 .nav i:hover{
     color: rgb(180, 179, 180);
