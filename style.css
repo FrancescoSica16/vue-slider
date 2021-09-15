@@ -28,6 +28,32 @@
     height: 100%;  
 }
 
+.nav {
+    position: absolute;
+    bottom:  36%;
+    /* ?? */
+    left: 50%;
+    transform: translate(-50%); 
+    background-color: rgba(46, 45, 45, 0.6);
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+.nav i{
+    font-size: 2em;
+    color: white;
+    justify-content: space-around;
+    /* non funziona  */
+    margin-left: 10px;
+}
+
+.nav i.active{
+    color: thistle;
+}
+.nav i:hover{
+    color: rgb(180, 179, 180);
+}
+
 #app{
     height: 100vh;
 }

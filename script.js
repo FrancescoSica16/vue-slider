@@ -1,3 +1,4 @@
+
 var app = new Vue({
 
     el: '#app',
@@ -20,27 +21,30 @@ var app = new Vue({
             alt:"TG 5"
           },
       ],
-      indexImages : 0,  // errore se lo metto fuori da images
+      indexImages : 0,  
     },
 
     
 
     methods: {
-        previousImages : function(){   // posso scrivere le funzione solo cosi ?
-            this.indexImages-- ;   //perche metto this ?
-            console.log(this.indexImages) 
+
+        previousImages : function(){
+            this.indexImages-- ;  
             
+
             if(this.indexImages < 0){
-                this.indexImages = this.images.lenght-1;
+                this.indexImages = this.images.length - 1;
             }
+            console.log(this.indexImages) 
         },
         nextImages : function(){   
             this.indexImages++ ;
-            console.log(this.indexImages)
+            
 
-            if(this.indexImages >= this.images.lenght){
+            if(this.indexImages >= this.images.length){
                 this.indexImages = 0;
             }  
+            console.log(this.indexImages)
         },
        
     },
