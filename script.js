@@ -30,8 +30,7 @@ var app = new Vue({
 
         previousImages : function(){
             this.indexImages-- ;  
-            
-
+    
             if(this.indexImages < 0){
                 this.indexImages = this.images.length - 1;
             }
@@ -39,8 +38,7 @@ var app = new Vue({
         },
         nextImages : function(){   
             this.indexImages++ ;
-            
-
+                  
             if(this.indexImages >= this.images.length){
                 this.indexImages = 0;
             }  
